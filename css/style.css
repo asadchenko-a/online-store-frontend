@@ -206,8 +206,14 @@ max-width: 640px;
 
 
 @media (max-width: 480px) {
-
+.logo{
+    margin-right: 80px;
 }
+.logo img{
+    width: 39px;
+}
+}
+
 
 
 @media (max-width: 360px) {
