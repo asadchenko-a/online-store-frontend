@@ -13,6 +13,14 @@ a {
   color: inherit;
 }
 
+.title{
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
 button {
   padding: 0;
   border: none;
@@ -38,7 +46,6 @@ body {
   line-height: 1.5;
   position: relative;
   /* font-family: "Cormorant", serif; */
-
 }
 
 .header__inner {
@@ -63,19 +70,19 @@ body {
   z-index: 2;
 }
 
-.menu--close{
+.menu--close {
   display: none;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.menu--close.menu--open{
+.menu--close.menu--open {
   display: block;
 }
 
@@ -153,7 +160,47 @@ body {
   margin: 150px auto;
 }
 
+.assortment {
+  margin-bottom: 150px;
+}
+
+.assortment__list {
+  text-align: center;
+  display: flex;
+  gap: 0 40px;
+
+}
+
+.assortment__img {
+  max-width: 208px;
+  max-height: 208px;
+  width: 100%;
+}
+
+.assortment__name {
+  padding-top: 10px;
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
+  .title{
+    margin-bottom: 30px;
+  }
   .user-actions__item-search {
     margin-left: 30px;
   }
@@ -173,7 +220,13 @@ body {
     margin-top: 120px;
     margin-bottom: 135px;
   }
-}
+  .assortment__list {
+  gap: 0;
+  }
+  .assortment {
+  margin-bottom: 120px;
+ }
+ }
 
 @media (max-width: 860px) {
   .menu__list {
@@ -188,7 +241,7 @@ body {
     display: block;
     text-align: center;
     padding-top: 60px;
-    transition: transform .6s ease;
+    transition: transform 0.6s ease;
   }
   .menu__list.menu__list--open {
     transform: translateY(0%);
@@ -245,7 +298,12 @@ body {
   .blockquote__tex {
     max-width: 640px;
   }
+  .assortment__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
 @media (max-width: 680px) {
   .container {
     padding-left: 10px;
@@ -277,9 +335,15 @@ body {
   .menu__list {
     width: 360px;
   }
+    .assortment {
+  margin-bottom: 60px;
+ }
 }
 
 @media (max-width: 360px) {
+  .title{
+    margin-bottom: 10px;
+  }
   .logo {
     margin-right: 50px;
   }
@@ -305,4 +369,10 @@ body {
     margin-top: 70px;
     margin-bottom: 80px;
   }
+  .assortment__img {
+    max-width: 170px;
+  }
+    .assortment {
+  margin-bottom: 80px;
+ }
 }
